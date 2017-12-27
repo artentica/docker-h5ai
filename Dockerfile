@@ -5,6 +5,8 @@ RUN apt-get update && apt-get install -y \
   nginx php7.0-fpm supervisor \
   wget unzip patch
 
+RUN service php7.0-fpm start
+
 # download latest release
 RUN wget http:`(wget https://larsjung.de/h5ai/ -q -O -) | sed 's/.*href="\(.*\.zip\)".*/\1/p' | head -n1`
 RUN unzip h5ai-*.zip -d /usr/share/h5ai
