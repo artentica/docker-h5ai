@@ -1,9 +1,9 @@
-FROM ubuntu
+FROM base/archlinux:latest
 MAINTAINER Riouallon Vincent
 
-RUN apt-get update && apt-get install -y \
+RUN pacman -Syyuu \
   nginx php7.0-fpm supervisor \
-  wget unzip patch
+  wget unzip patch --noconfirm --needed
 
 # download latest release
 RUN wget http:`(wget https://larsjung.de/h5ai/ -q -O -) | sed 's/.*href="\(.*\.zip\)".*/\1/p' | head -n1`
