@@ -2,7 +2,7 @@ FROM ubuntu:latest
 MAINTAINER Riouallon Vincent
 
 RUN apt-get update && apt-get install -y \
-  nginx php7.0-fpm supervisor \
+  nginx php-fpm supervisor \
   wget unzip patch
 
 # download latest release
