@@ -18,7 +18,7 @@ Further runs will be immediate, as the image will be cached locally.
 The recommended way to run this container looks like this:
 
 ```bash
-$ sudo docker run -it --rm -p 80:80 -v `pwd`:/var/www clue/h5ai
+$ sudo docker run -it --rm -p 80:80 -v `pwd`:/var/www artentica/h5ai
 ```
 
 You can now point your webbrowser to this URL:
