@@ -4,7 +4,7 @@
 This [docker](https://www.docker.io/) image makes it trivially easy to
 spin up a webserver and start sharing your files through the web.
 
-![screenshot](./screenshoot.png)
+![screenshot](./sc.png)
 
 See also the [demo directory](http://larsjung.de/h5ai/sample).
 
