@@ -34,3 +34,7 @@ This is a rather common setup following docker's conventions:
 * `-v {AnyDirectory}:/var/www` will mount the given directory as the base directory for the browsable directory index
 * `-p {OutsidePort}:80` will bind the webserver to the given outside port
 * `clue/h5ai` the name of this docker image
+
+This docker have:
+* php7.0
+* Last version of h5ai
